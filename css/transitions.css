@@ -1,5 +1,6 @@
 body {
-  background: #333;
+  background: lightblue;
+  position: relative;
 }
 
 .box {
@@ -8,7 +9,7 @@ body {
   height: 300px;
   position: relative;
   margin: auto;
-  top: 200px;
+  top: 50px;
   /* transition-property: background, border-radius, transform; */
   transition-property: all;
   transition-duration: 1s;
@@ -20,11 +21,32 @@ body {
   background: red;
   border-radius: 50%;
   transform: rotateY(180deg);
-
 }
 
+.wrapper {
+  width: 100%;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  box-sizing: border-box;
+}
 
+.circle {
+  margin: 50px auto;
+  width: 100px;
+  padding: 50px 10px;
+  background: pink;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  left: 500px;  
+  transition: background 500ms ease, transform 1000ms 500ms ease;
+}
 
+.circle:hover {
+  background: salmon;
+  transform: rotate(360deg);
+}
 /*
 TRANSITIONAL PROPERTIES
 -Properties that have an identifiable halfway point
